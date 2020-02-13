@@ -1,0 +1,27 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netstandard2.0</TargetFramework>
+    <RootNamespace>OpenCC.NET</RootNamespace>
+    <AssemblyName>OpenCC.NET</AssemblyName>
+    <Description>Open Chinese Convert 開放中文轉換</Description>
+    <Copyright>MIT</Copyright>
+    <Authors>OpenCC.NET</Authors>
+    <Company>OpenCC.NET</Company>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Newtonsoft.Json" Version="12.0.3" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="Dictionaries\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Update="Dictionaries\opencc-dictionary.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+
+</Project>

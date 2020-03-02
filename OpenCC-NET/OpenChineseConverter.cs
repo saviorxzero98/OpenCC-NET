@@ -3,6 +3,9 @@ using System.Collections.Generic;
 
 namespace OpenCC.NET
 {
+    /// <summary>
+    /// OpenCC
+    /// </summary>
     public class OpenChineseConverter : AbstractChineseConverter
     {
         public const string DictionaryPath = "~\\Dictionaries\\opencc-dictionary.json";
